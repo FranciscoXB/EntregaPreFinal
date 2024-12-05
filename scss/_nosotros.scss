@@ -1,0 +1,62 @@
+.contenedor-resto {
+    display: flex;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-top: 140px;
+  }
+  
+  .nosotros-container {
+    padding-left: 20px;
+  }
+  
+  .imagen-nosotros {
+    width: 620px;
+  }
+  
+  .imagen-section {
+    animation: flip-in-hor-bottom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  
+  @keyframes flip-in-hor-bottom {
+    0% {
+      transform: rotateX(80deg);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .nosotros-titulo {
+    font-size: 60px;
+    font-family: 'Agdasima';
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: underline;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: unset;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+  .biografia {
+    font-size: 28px;
+    font-family: 'Agdasima';
+    font-style: normal;
+    font-weight: 200;
+    padding-top: 16px;
+  }

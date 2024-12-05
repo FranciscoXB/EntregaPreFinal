@@ -1,0 +1,59 @@
+@media screen and (max-width: 500px) {
+    .container-img {
+      width: 90%;
+      grid-template-columns: repeat(auto-fill);
+      display: block;
+  
+      .box-img img {
+        height: 200px;
+        max-width: 100%;
+        padding-bottom: 10px;
+      }
+    }
+  
+    img:hover {
+      border: none;
+    }
+  }
+  
+  /* NAVBAR QUERY*/
+  
+  @media screen and (max-width: 500px) {
+    .navbar {
+      padding-right: 35px;
+    }
+  
+    .cell {
+      color: transparent;
+      -webkit-text-stroke: transparent;
+    }
+  }
+  
+  /* NOSOTROS QUERY */
+  
+  @media screen and (max-width: 500px) {
+    .contenedor-resto {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .nosotros-container {
+      text-align: center;
+    }
+  
+    .imagen-nosotros {
+      max-width: 500px;
+    }
+  }
+  
+  /* CONTACTO */
+  
+  @media screen and (max-width: 500px) {
+    .container-form {
+      width: 450px;
+      display: block;
+      padding: 15px;
+    }
+  }
+  

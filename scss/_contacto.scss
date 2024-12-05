@@ -1,0 +1,99 @@
+@mixin anclas {
+    outline: 0;
+    font-size: 20px;
+}
+
+.container-form {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+  
+    h2 {
+      margin-bottom: 15px;
+      font-size: 35px;
+    }
+  
+    p {
+      font-size: 20px;
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+  
+    a {
+      font-size: 20px;
+      display: inline-block;
+      text-decoration: none;
+      width: 100%;
+      margin-bottom: 15px;
+      color: black;
+      font-weight: 700;
+  
+      i {
+        color: orange;
+        margin-right: 10px;
+      }
+    }
+  
+    form .campo {
+      width: 100%;
+      padding: 15px 10px;
+      border: 1px solid #dbdbdb;
+      margin-bottom: 20px;
+      border-radius: 3px;
+      @include anclas;
+    }
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    @include anclas;
+  }
+  
+  .container-form {
+    form textarea {
+      max-width: 530px;
+      min-width: 530px;
+      min-height: 140px;
+      max-height: 150px;
+    }
+  
+    .btn-enviar {
+      padding: 15px;
+      border: none;
+      @include anclas;
+      background: orange;
+      color: white;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: all 300ms ease;
+  
+      &:hover {
+        background: #e39403;
+      }
+    }
+  }
+  
+  .info-form {
+    font-family: 'Agdasima';
+    font-style: normal;
+    font-weight: 300;
+  }
+  
+  .mapa-contenedor {
+    text-align: center;
+    padding-top: 60px;
+  }
+  
+  .mapa {
+    width: 450px;
+    height: 300px;
+  }
+  
